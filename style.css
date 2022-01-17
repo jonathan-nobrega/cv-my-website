@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    flex-direction: row;
+    height: 1000px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin: 0;
+    color: #808080;
+}
+
+nav {
+    height: 100%;
+}
+
+.side-menu {
+    /* display: flex;
+    flex-direction: column; */
+    position: fixed;
+    height: 100%;
+    width: 100px;
+    margin: 0;
+    background-color: #86B049;
+    transition: width 0.5;
+    -webkit-transition: width 0.5s;
+}
+
+.side-menu:hover {
+    width: 200px;
+}
+
+.side-menu:hover .navItemName {
+    font-size: 12px;
+}
+
+.logo-box {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: #476930;
+}
+
+.logo {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    height: 100%;
+    /* align-items: center; */
+    padding-left: 20px;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.navSection {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 20px 30px 10px 10px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.navSection:hover {
+    background-color: #c8b88a;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navItemName {
+    margin-left: 20px;
+    font-size: 0;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.navItemName:hover {
+    display: block;
+
+}
+
+.page {
+    display: flex;
+    /* background: #f1dddf; */
+    height: 500px;
+    width: 100%;
+    padding: 50px;
+    margin-left: 100px;
+}
+
+
+.info-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 1074px;
+}
+
+.info-avatar {
+    /* display: flex; */
+    width: 50%;
+    border-radius: 50%;
+    /* -webkit-box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5; */
+    box-shadow: 12px 0 #9ebf6d, 24px 0 #c2d7a4, 36px 0 #dae7c8;
+}
+
+
+.info-text {
+    width: 50%
+}
+
+.info-name {
+    font-size: 40px;
+    font-weight: 300;
+    color: #476930;
+}
+
+.info-smallBio {
+    letter-spacing: 1px;
+    /* color: #86B049; */
+    /* color: #808080; */
+    font-size: 1rem;
+    min-width: 250px;
+    line-height: 1.4;
+}

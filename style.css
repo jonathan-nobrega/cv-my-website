@@ -1,12 +1,15 @@
 body {
-    /* display: flex;
-    flex-direction: row; */
     height: auto;
     font-family: 'Poppins';
     font-weight: 400;
     margin: 0;
     padding: 0;
     color: #808080;
+    background-color: #f7f7f7;
+}
+
+h2 {
+    font-weight: 400;
 }
 
 nav {
@@ -78,6 +81,7 @@ nav {
     margin: 20px 30px 10px 10px;
     align-items: center;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .navSection:hover {
@@ -138,7 +142,7 @@ nav {
 
 .info-name {
     font-size: 40px;
-    font-weight: 300;
+    font-weight: 500;
     color: #476930;
 }
 
@@ -191,4 +195,41 @@ nav {
 .info-socialList li a:hover {
     -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section-about {
+    /* display: block; */
+    height: 100vh;
+    width: 100%;
+}
+
+.section-about-head {
+    width: 1074px;
+}
+
+.section-about-text {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    font-size: 0.8em;
+}
+
+.section-about-text::before {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 1px;
+    top: 1px;
+    left: 0;
+    background: black;
+}
+
+.section-about-article {
+    background: white;
+    border-radius: 50px;
+    height: 200px;
+    width: 100%;
+    padding: 30px;
 }

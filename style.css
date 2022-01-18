@@ -81,7 +81,7 @@ nav {
     margin: 20px 30px 10px 10px;
     align-items: center;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .navSection:hover {
@@ -172,7 +172,7 @@ nav {
 
 .info-links-resume:hover {
     -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.2);
 }
 
 .info-socialList {
@@ -197,17 +197,18 @@ nav {
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
 }
 
-.section-about {
-    /* display: block; */
-    height: 100vh;
+.section-about, .section-skills {
+    width: 100%;
+    padding: 70px 0;
+    /* -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in; */
+}
+
+.section-head {
     width: 100%;
 }
 
-.section-about-head {
-    width: 1074px;
-}
-
-.section-about-text {
+.section-preTitle {
 
     display: flex;
     flex-direction: row;
@@ -216,20 +217,28 @@ nav {
     font-size: 0.8em;
 }
 
-.section-about-text::before {
+.section-preTitle:before {
     display: block;
     content: "";
-    width: 40px;
+    width: 50px;
     height: 1px;
-    top: 1px;
-    left: 0;
-    background: black;
+    margin-right: 20px;
+    background: green;
 }
 
-.section-about-article {
+.section-title {
+    margin-top: 5px;
+}
+
+.section-box {
     background: white;
     border-radius: 50px;
-    height: 200px;
+    height: 350px;
     width: 100%;
-    padding: 30px;
+}
+
+.section-about p {
+    padding: 50px;
+    line-height: 1.5;
+    font-size: 18px;
 }

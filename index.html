@@ -63,7 +63,6 @@
   </div>
 
   <div class="page-out">
-
     <div class="page-in">
 
       <div class="info">
@@ -95,14 +94,14 @@
 
       </div>
 
-      <section class="section-about" id="about">
+      <section class="section-about section-block" id="about">
         <div class="section-head">
           <span class="section-preTitle">GET TO KNOW</span>
           <h2 class="section-title">ABOUT ME</h2>
         </div>
         <div class="section-box">
           <p class="section-about-article">I'm a web developer with a civil engineering background. After 5 years
-            working in the construction site, I decided to create a startup (and failed miserably). I have always been
+            working in the construction site, I decided to create a startup (which I had not succeeded at all). I have always been
             fascinated with startups and by trying to build one I realized a new exciting career I was looking forward
             to pursuing. That's why I pivoted my career and became a developer. <br><br>
             Currently looking for an exciting new project that's not only a challenge but that could also approximate me
@@ -111,19 +110,137 @@
         </div>
       </section>
 
-      <section class="section-skills" id="skills">
+      <section class="section-block" id="skills">
+
         <div class="section-head">
           <span class="section-preTitle">CHECK OUT MY</span>
           <h2 class="section-title">SKILLS</h2>
         </div>
-        <div class="section-box">
-          
+
+        <div class="section-container section-grid">
+          <ul class="skillsGrid">
+            <li>
+              <div class="itemGrid">
+                <img src="images/html.svg">
+                <p>HTML</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/css.svg">
+                <p>CSS</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/javascript.svg">
+                <p>Javascript</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/bootstrap.svg">
+                <p>Bootstrap</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/react.svg">
+                <p>React</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/adobeXd.svg">
+                <p>Adobe Xd</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/api.svg" alt="Image from https://commons.wikimedia.org/wiki/File:Cloud-API-Logo.svg">
+                <p>REST API</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/git.svg">
+                <p>Git</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/firebase.svg">
+                <p>Firebase</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/vscode.svg">
+                <p>VS Code</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/zoho.svg">
+                <p>Zoho</p>
+              </div>
+            </li>
+            <li>
+              <div class="ItemGrid">
+                <img src="images/netsuite.svg">
+                <p>Netsuite</p>
+              </div>
+            </li>
+          </ul>
         </div>
+
       </section>
 
+      <section class="section-block" id="projects">
+
+        <div class="section-head">
+          <span class="section-preTitle">TAKE A LOOK AT MY</span>
+          <h2 class="section-title">PROJECTS</h2>
+        </div>
+        <div class="section-container ">
+
+          <!-- MY CRM DETAILS -->
+          <div class="project-box">
+            <img class="project-image" src="images/my-crm-dashboard.PNG" alt="my-crm">
+            <div>
+              <h2>My first CRM</h2>
+              <p>Technologies used: <span style="color: #86B049;">Bootstrap, React, MongoDB</span></p>
+              <ul>
+                <li>Uses React Router to navigate through pages.</li>
+                <li>Authenticates and fetches data on MongoDB database.</li>
+              </ul>
+              <a href="https://github.com/moraesjon/my-crm" target="_blank" >Git repo</a>
+            </div>
+          </div>
+
+          <!-- ALURA DEV CODE EDITOR DETAILS -->
+          <div class="project-box">
+            <img class="project-image" src="images/code-editor-highlight.PNG" alt="code-editor">
+            <div>
+              <h2>Code Snippets Editor</h2>
+              <p>Technologies used: <span style="color: #86B049;">React, SCSS</span></p>
+              <ul>
+                <li>Uses React to break application into components.</li>
+                <li>Applies a syntax highlighter to dynamically format text on the code editor. (Pending)</li>
+              </ul>
+              <a href="https://github.com/moraesjon/aluradev-front-challenge" target="_blank" >Git repo</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
     </div>
 
 </body>
+
+<footer>
+  <p>© Jonathan Moraes 2022.</p>
+</footer>
 
 </html>

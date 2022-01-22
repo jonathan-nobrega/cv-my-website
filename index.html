@@ -91,7 +91,6 @@
             </ul>
           </div>
         </div>
-
       </div>
 
       <section class="section-about section-block" id="about">
@@ -101,7 +100,8 @@
         </div>
         <div class="section-box">
           <p class="section-about-article">I'm a web developer with a civil engineering background. After 5 years
-            working in the construction site, I decided to create a startup (which I had not succeeded at all). I have always been
+            working in the construction site, I decided to create a startup (which I had not succeeded at all). I have
+            always been
             fascinated with startups and by trying to build one I realized a new exciting career I was looking forward
             to pursuing. That's why I pivoted my career and became a developer. <br><br>
             Currently looking for an exciting new project that's not only a challenge but that could also approximate me
@@ -111,12 +111,11 @@
       </section>
 
       <section class="section-block" id="skills">
-
         <div class="section-head">
           <span class="section-preTitle">CHECK OUT MY</span>
           <h2 class="section-title">SKILLS</h2>
         </div>
-
+        <!-- Itens dos Skills -->
         <div class="section-container section-grid">
           <ul class="skillsGrid">
             <li>
@@ -193,17 +192,14 @@
             </li>
           </ul>
         </div>
-
       </section>
 
-      <section class="section-block" id="projects">
-
+      <section class="section-block" id="works">
         <div class="section-head">
           <span class="section-preTitle">TAKE A LOOK AT MY</span>
           <h2 class="section-title">PROJECTS</h2>
         </div>
         <div class="section-container ">
-
           <!-- MY CRM DETAILS -->
           <div class="project-box">
             <img class="project-image" src="images/my-crm-dashboard.PNG" alt="my-crm">
@@ -214,10 +210,9 @@
                 <li>Uses React Router to navigate through pages.</li>
                 <li>Authenticates and fetches data on MongoDB database.</li>
               </ul>
-              <a href="https://github.com/moraesjon/my-crm" target="_blank" >Git repo</a>
+              <a href="https://github.com/moraesjon/my-crm" target="_blank">Git repo</a>
             </div>
           </div>
-
           <!-- ALURA DEV CODE EDITOR DETAILS -->
           <div class="project-box">
             <img class="project-image" src="images/code-editor-highlight.PNG" alt="code-editor">
@@ -228,15 +223,49 @@
                 <li>Uses React to break application into components.</li>
                 <li>Applies a syntax highlighter to dynamically format text on the code editor. (Pending)</li>
               </ul>
-              <a href="https://github.com/moraesjon/aluradev-front-challenge" target="_blank" >Git repo</a>
+              <a href="https://github.com/moraesjon/aluradev-front-challenge" target="_blank">Git repo</a>
             </div>
           </div>
-
         </div>
       </section>
 
-    </div>
+      <section class="section-block" id="contact">
+        <div class="section-head">
+          <span class="section-preTitle">SAY HELLO</span>
+          <h2 class="section-title">CONTACT</h2>
+        </div>
+        <div class="section-container ">
+          <h2>Get in touch</h2>
+          <div class="contact-types">
+            <div class="contact-typeBox">
+              <i class="lni lni-envelope lni-lg contact-email"></i>
+              <a href="mailto:eng.jonathan.moraes@gmail.com">eng.jonathan.moraes@gmail.com</a>
+              <p>Email me</p>
+            </div>
+            <div class="contact-typeBox">
+              <i class="lni lni-calendar lni-lg contact-calendly"></i>
+              <a href="https://calendly.com/moraes-jonathan/30min" target="_blank">Calendly</a>
+              <p>Schedule a meeting</p>
+            </div>
+          </div>
+          <h2>Contact form</h2>
+          <form class="contactForm" id="contactForm" action="/send_form.js" method="POST">
+            <!-- <label for="name" class="srOnly"></label> -->
+            <input type="text" class="nameInput" id="inputName" required placeholder="Your name*">
+            <!-- <label for="email" class="srOnly"></label> -->
+            <input type="text" class="emailInput" id="inputEmail" required placeholder="Your email*">
+            <!-- <label for="subject" class="srOnly"></label> -->
+            <input type="text" class="subjectInput" id="inputSubject" required placeholder="Subject*">
+            <!-- <label for="message" class="srOnly"></label> -->
+            <textarea type="text" class="textInput" id="inputMessage" required placeholder="Your message*"></textarea>
+          </form>
+          <button class="form-send" type="submit" form="contactForm">Send</button>
+        </div>
 
+      </section>
+
+
+    </div>
 </body>
 
 <footer>

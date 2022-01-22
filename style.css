@@ -13,19 +13,16 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: white;
-
     margin-top: 50px;
     height: 100%;
     width: 100%;
-
 }
-
 
 h1,
 h2,
 h3 {
     font-weight: 400;
-    margin-top: 0;
+    /* margin-top: 0; */
 }
 
 nav {
@@ -81,7 +78,6 @@ ul {
     flex-direction: column;
     list-style-type: none;
     height: 100%;
-    /* align-items: center; */
     padding-left: 20px;
 }
 
@@ -322,6 +318,10 @@ ul {
     transition: all 0.3s ease-in;
 }
 
+.project-box h2 {
+    margin-top: 0;
+}
+
 .project-box:hover {
     -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
     box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
@@ -331,4 +331,81 @@ ul {
     width: 400px;
     margin-right: 50px;
     border-radius: 15px;
+}
+
+.contact-types {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.contact-typeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #eee;
+    width: 100%;
+    margin: 0 20px;
+    padding: 20px 20px 0 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in;
+}
+
+.contact-typeBox:hover {
+    -webkit-box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-email {
+    padding: 30px;
+    background: rgba(241, 221, 223, 0.6);
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+.contact-calendly {
+    padding: 30px;
+    background: rgba(200, 184, 138, 0.3);
+    border-radius: 7px;
+    margin-bottom: 25px;
+}
+
+.contactForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+    row-gap: 1em;
+
+    
+}
+
+form input, form textarea
+{
+    border: 1px solid #eee;
+    transition: all 0.3s ease-in;
+    padding: 11px 20px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.subjectInput,
+.textInput {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.form-send {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: auto;
+    border-radius: 40px;
+    background-color: #476930;
+    color: white;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    text-transform: none;
 }

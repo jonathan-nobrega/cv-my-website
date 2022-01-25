@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&amp;display=swap"
     rel="stylesheet">
   <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-  <!-- <title>Jon's website</title> -->
-  <title>Under construction..</title>
+  <title>Jon's website</title>
+  <!-- <title>Under construction..</title> -->
 </head>
 
 <body>
@@ -100,7 +100,7 @@
         </div>
         <div class="section-box">
           <p class="section-about-article">I'm a web developer with a civil engineering background. After 5 years
-            working in the construction site, I decided to create a startup (which I had not succeeded at all). I have
+            working in the construction site, I decided to create a startup (which I had failed). I have
             always been
             fascinated with startups and by trying to build one I realized a new exciting career I was looking forward
             to pursuing. That's why I pivoted my career and became a developer. <br><br>
@@ -249,19 +249,15 @@
             </div>
           </div>
           <h2>Contact form</h2>
-          <form class="contactForm" id="contactForm" action="/send_form.js" method="POST">
-            <!-- <label for="name" class="srOnly"></label> -->
-            <input type="text" class="nameInput" id="inputName" required placeholder="Your name*">
-            <!-- <label for="email" class="srOnly"></label> -->
-            <input type="text" class="emailInput" id="inputEmail" required placeholder="Your email*">
-            <!-- <label for="subject" class="srOnly"></label> -->
-            <input type="text" class="subjectInput" id="inputSubject" required placeholder="Subject*">
-            <!-- <label for="message" class="srOnly"></label> -->
-            <textarea type="text" class="textInput" id="inputMessage" required placeholder="Your message*"></textarea>
+          <!-- <form class="contactForm" id="contactForm" onSubmit="return postToGoogle()"> -->
+          <form class="contactForm" id="contactForm" action="https://formspree.io/f/myyokawr" method="POST">
+            <input name="name" type="text" class="nameInput" id="inputName" required placeholder="Your name*">
+            <input name="email" type="email" class="emailInput" id="inputEmail" required placeholder="Your email*">
+            <input name="subject" type="text" class="subjectInput" id="inputSubject" required placeholder="Subject*">
+            <textarea name="message" type="text" class="textInput" id="inputMessage" required placeholder="Your message*"></textarea>
           </form>
-          <button class="form-send" type="submit" form="contactForm">Send</button>
+          <button class="form-send" type="submit" form="contactForm" id="contact-submit">Send</button>
         </div>
-
       </section>
 
 

@@ -22,10 +22,11 @@ h1,
 h2,
 h3 {
     font-weight: 400;
-    /* margin-top: 0; */
 }
 
 nav {
+    display: flex;
+    margin: auto;
     height: 100%;
 }
 
@@ -376,8 +377,9 @@ ul {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 25px;
     row-gap: 1em;
-
-    
+    margin: 0;
+    padding:0;
+    margin-bottom: 35px;
 }
 
 form input, form textarea
@@ -388,24 +390,38 @@ form input, form textarea
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 1px;
-    width: 100%;
+}
+
+.nameInput {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+} 
+.emailInput {
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 
 .subjectInput,
 .textInput {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
 }
 
 .form-send {
-    text-align: center;
-    text-decoration: none;
     padding: 10px 30px;
-    margin: auto;
     border-radius: 40px;
     background-color: #476930;
     color: white;
     letter-spacing: 2px;
-    transition: all 0.5s;
-    text-transform: none;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    border-width: 0;
+    font-size: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.form-send:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.3);
 }
